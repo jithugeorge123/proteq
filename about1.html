@@ -19,6 +19,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/styles1.css" rel="stylesheet">
+
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -28,24 +32,66 @@ body, html {
 }
 
 /* Full height image header */
-.bgimg-1 {
+/* .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("intropic.png");
+  background-image: url("#");
   min-height: 90%;
-}
+} */
 
 .w3-bar .w3-button {
   padding: 20px;
 }
 </style>
 <body>
-
-<!-- Navbar (sit on top) -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light navbar-custom fixed-top">
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+  
+    <!-- Image Logo -->
+    <a class="navbar-brand logo-image" href="index.html#home"><img src="logo.jpg" alt="alternative"></a>
+    
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+           
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#services">INDUSTRIES</a>
+            </li>
+  
+            <!-- Dropdown Menu -->          
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle page-scroll" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">PROJECTS</span></a>
+                    <div class="dropdown-items-divide-hr"></div>
+                    <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">TRADING</span></a>
+                </div>
+            </li>
+            <!-- end of dropdown menu -->
+  
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+            </li>
+        </ul>
+        
+    </div>
+  </nav> <!-- end of navbar -->
+<!-- Navbar (sit on top)
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.html" class="w3-bar-item w3-button w3-wide">HOME</a>
-    <!-- Right-sided navbar links -->
+    <a class="navbar-brand logo-image" href="#home"><img src="logo.jpg" alt="alternative"></a>
+    <!-- Right-sided navbar links 
     <div class="w3-right w3-hide-small">
       <a href="index.html#about" class="w3-bar-item w3-button">ABOUT</a>
       
@@ -53,7 +99,7 @@ body, html {
     
       <a href="index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <!-- Hide right-floated links on small screens and replace them with a menu icon 
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
@@ -61,7 +107,7 @@ body, html {
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- Sidebar on small screens when clicking the menu icon 
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
@@ -69,7 +115,7 @@ body, html {
   <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
   
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
+</nav> -->
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
