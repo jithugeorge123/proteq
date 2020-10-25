@@ -19,6 +19,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/styles1.css" rel="stylesheet">
+
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -41,11 +45,57 @@ body, html {
 </style>
 <body>
 
-<!-- Navbar (sit on top) -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light navbar-custom fixed-top">
+  <!-- Text Logo - Use this if you don't have a graphic logo -->
+  <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+  <!-- Image Logo -->
+  <a class="navbar-brand logo-image" href="#home"><img src="logo.jpg" alt="alternative"></a>
+  
+  <!-- Mobile Menu Toggle Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-awesome fas fa-bars"></span>
+      <span class="navbar-toggler-awesome fas fa-times"></span>
+  </button>
+  <!-- end of mobile menu toggle button -->
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
+         
+          <li class="nav-item">
+              <a class="nav-link page-scroll" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link page-scroll" href="#services">INDUSTRIES</a>
+          </li>
+
+          <!-- Dropdown Menu -->          
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle page-scroll" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">PROJECTS</span></a>
+                  <div class="dropdown-items-divide-hr"></div>
+                  <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">TRADING</span></a>
+              </div>
+          </li>
+          <!-- end of dropdown menu -->
+
+          <li class="nav-item">
+              <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+          </li>
+      </ul>
+      
+  </div>
+</nav> <!-- end of navbar -->
+<!-- end of navbar -->
+
+<!-- Navbar (sit on top) 
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
-    <!-- Right-sided navbar links -->
+    
+    <!-- Right-sided navbar links 
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       
@@ -53,15 +103,15 @@ body, html {
     
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <!-- Hide right-floated links on small screens and replace them with a menu icon 
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
-</div>
+</div>-->
 
-<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- Sidebar on small screens when clicking the menu icon 
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
@@ -69,7 +119,7 @@ body, html {
   <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
   
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
+</nav>-->
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
@@ -135,14 +185,20 @@ body, html {
     <div class="w3-col m6">
       <h3><b>INDUSTRIES SERVED</b></h3>
       <ul style="list-style-type:georgian;"></ul>
-       <li>Breweries</li>
+      <li>Distillery</li>
+        <li>Breweries</li>
         <li> Micro Breweries</li>
+        <li>Oil & Gas</li>
         <li>Edible oil Refineries<br></li>
         <li>Chemical & Pharmaceutical Plants</li>
         <li>Pipelines & Refineries</li>
+        <li>Water Line Projects</li>
+        <li>Fertilizers & Sugar Plants</li>
+        <li>Hydro & Nuclear Power Plants</li>
+        
         <li>Steel & Power Plants</li>
-        <li>Distiller</li>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+        
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Completed Projects</a></p>
     </div>
     <div class="w3-col m6">
       <img class="w3-image w3-round-large" src="weld1.jpg" alt="Buildings" width="700" height="90">
@@ -150,57 +206,7 @@ body, html {
   </div>
 </div>
 
-<!-- Team Section 
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">THE TEAM</h3>
-  <p class="w3-center w3-large">The ones who runs this company</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>John Doe</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Anja Doe</h3>
-          <p class="w3-opacity">Art Director</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>Mike Ross</h3>
-          <p class="w3-opacity">Web Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-        <div class="w3-container">
-          <h3>Dan Star</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
+
 
 <!-- Promo Section "Statistics" -->
 <!--<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
@@ -224,8 +230,8 @@ body, html {
 
 <!-- Work Section -->
 <div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center"><b>OUR WORK</b></h3>
-  <p class="w3-center w3-large">What we've done for people</p>
+  <h3 class="w3-center"><b>OUR COMPLETED PROJECTS</b></h3>
+  <p class="w3-center w3-large">What we've done for our clients</p>
 
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
@@ -444,7 +450,7 @@ body, html {
 
        
     <!-- Image of location/map -->
-    <img src="lastpic.jpeg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    <img src="#" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
   </div>
 </div>
 
