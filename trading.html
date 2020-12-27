@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- <script src="https://script.google.com/macros/s/AKfycbzjEX_9Cxe6sO9PwU63FHKM_OdkXZo0ZVHMRiNS/exec"></script>  -->
+    <!--<script src="pro.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+      $(document).ready(function(){
+        $("form").submit(function(){
+          alert("mail sent successfully");
+          location.reload();
+        });
+      });
+      </script>
+</head>
+<title>PROTEQ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/styles1.css" rel="stylesheet">
+<link href="css/fontawesome-all.css" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<!-- hii there-->
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 2;
+}
+
+/* Full height image header */
+/* .bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("#");
+  min-height: 90%;
+} */
+
+.w3-bar .w3-button {
+  padding: 20px;
+}
+
+ dummydeclaration { padding-left: 4em; } /* Firefox ignores first declaration for some reason */
+            tab1 { padding-left: 4em; }
+            tab2 { padding-left: 8em; }
+            tab3 { padding-left: 12em; }
+            tab4 { padding-left: 16em; }
+            tab5 { padding-left: 20em; }
+            tab6 { padding-left: 24em; }
+            tab7 { padding-left: 28em; }
+            tab8 { padding-left: 32em; }
+            tab9 { padding-left: 36em; }
+            tab10 { padding-left: 40em; }
+            tab11 { padding-left: 44em; }
+            tab12 { padding-left: 48em; }
+            tab13 { padding-left: 52em; }
+            tab14 { padding-left: 56em; }
+            tab15 { padding-left: 60em; }
+            tab16 { padding-left: 64em; }
+
+            /* Create two columns/boxes that floats next to each other */
+    nav1 {
+        float: left;
+        width: 30%;
+        height: 500px;/* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+    }
+    
+    /* Style the list inside the menu */
+    nav1 ul {
+        list-style-type: none;
+        padding: 50px;
+    }
+    
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 500px; /*  only for demonstration, should be removed */
+    }
+    
+    /* Clear floats after the columns */
+    section:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @media (max-width: 600px) {
+        nav1, article {
+          width: 100%;
+          height: auto;
+        }
+      }
+  
+</style>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light bg-light  navbar-custom fixed-top">
+  <!-- Text Logo - Use this if you don't have a graphic logo -->
+  <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+  <!-- Image Logo -->
+  <a class="navbar-brand logo-image" href="index.html#home"><img src="logo.jpg" alt="alternative"></a>
+  
+  <!-- Mobile Menu Toggle Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-awesome fas fa-bars"></span>
+      <span class="navbar-toggler-awesome fas fa-times"></span>
+  </button>
+  <!-- end of mobile menu toggle button -->
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
+         
+          <li class="nav-item">
+              <a class="nav-link page-scroll" href="index.html#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link page-scroll" href="#services">INDUSTRIES</a>
+          </li>
+
+         <!-- Dropdown Menu -->          
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle page-scroll" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="projects.html#mechanical"><span class="item-text">MECHANICAL  </span></a>
+                <div class="dropdown-items-divide-hr"></div>
+                <a class="dropdown-item" href="projects.html#e&i"><span class="item-text">ELECTRICAL & INSTRUMENTATION </span></a>
+        <div class="dropdown-items-divide-hr"></div>
+                <a class="dropdown-item" href="projects.html#h&a"><span class="item-text">HV & AC  </span></a>
+        <div class="dropdown-items-divide-hr"></div>
+                <a class="dropdown-item" href="projects.html#coating"><span class="item-text">INTERNAL & EXTERNAL COATING  </span></a>
+        <div class="dropdown-items-divide-hr"></div>
+                <a class="dropdown-item" href="projects.html#hdpe"><span class="item-text">HDPE/GRE/GRP PIPING </span></a>
+        <div class="dropdown-items-divide-hr"></div>
+                <a class="dropdown-item" href="projects.html#support"><span class="item-text">PROJECT SUPPORT  </span></a>
+        <div class="dropdown-items-divide-hr"></div>
+                <a class="dropdown-item" href="projects.html#rental"><span class="item-text"> RENTAL   </span></a>
+            </div>
+        </li>
+          <!-- end of dropdown menu -->
+		   <!-- Dropdown Menu -->          
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle page-scroll" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">TRADING</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <<a class="dropdown-item" href="#mechanical"><span class="item-text">MECHANICAL </span></a>
+                  <div class="dropdown-items-divide-hr"></div>
+                  <a class="dropdown-item" href="#e&i"><span class="item-text">ELECTRICAL & INSTRUMENTATION</span></a>
+                  <div class="dropdown-items-divide-hr"></div>
+                  <a class="dropdown-item" href="#ppe"><span class="item-text">PERSONAL PROTECTIVE EQUIPMENT  </span></a>
+                  <div class="dropdown-items-divide-hr"></div>
+                  <a class="dropdown-item" href="#h&a"><span class="item-text">HV & AC  </span></a>
+				  
+              </div>
+          </li>
+          <!-- end of dropdown menu -->
+
+          <li class="nav-item">
+              <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+          </li>
+      </ul>
+      
+  </div>
+</nav>  <!-- end of navbar -->
+<!-- Navbar (sit on top)
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a class="navbar-brand logo-image" href="#home"><img src="logo.jpg" alt="alternative"></a>
+    <!-- Right-sided navbar links 
+    <div class="w3-right w3-hide-small">
+      <a href="index.html#about" class="w3-bar-item w3-button">ABOUT</a>
+      
+      <a href="index.html#services" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
+    
+      <a href="index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon 
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon 
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+ 
+  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+  
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav> -->
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:50px">
+    <br>
+    <br>
+  </br>
+</br>
+  
+</header>
+
+<div class="w3-container" style="padding:128px 10px" id="trading"></div>
+<h1 class="w3-center"><b>TRADING </h1></b>
+<section>
+    <nav1>
+      <ul  style="list-style-type:georgian;"></ul>
+        <li><a href="#mechanical">MECHANICAL DIVISION</a></li>
+        <li><a href="#e&i">	ELECTRICAL & INSTRUMENTATION  DIVISIION</a></li>
+        <li><a href="#ppe">	PERSONAL PROTECTIVE EQUIPMENT (PPE) DIVISION</a></li>
+        <li><a href="#h&a">	HEAT VENTILATION & AIR CONDITIONING (HVAC) DIVISION</a></li>
+      
+    </nav1>
+<article>
+    <p class= "w3-large"> <b>PTEC</b> is the one of the leading General trading company in India. With its international expertise in different
+         sectors with a good rapport in the market and has become the one of the most 
+         trusted and leading supplier <b>of bulk piping, flow line material- pipe, pipe fittings , valve , flanges ,fasteners, sealing 
+         Gaskets  , PPE ,  panels ,cable trays ,cables ,pumps etc.</b> for different industry, in line with relevant
+          international codes /standards and customer requirements </p>
+     <p class="w3-center w3-large"><i> “Our philosophy for commitment to provide genuine quality materials, honest dealings, and focused after sales services.” </i></p>
+     <p class= "w3-large"> <b>PTEC</b> is reputed as a key professional vendor for major companies in the Oil & Gas, Petrochemicals,
+         and Water & Power, Construction, Food & Beverage, breweries and Pharmaceuticals industries in the region.
+          PTEC can support our clients continuously in works towards adding better resources for the benefits of clients. </p>
+      </article>
+    </section>
+
+<!-- About Section -->
+<div class="w3-container " style="padding:128px 16px" id='mechanical'>
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3><b>MECHANICAL DIVISION</b></h3>
+        <ul style="list-style-type:georgian;"></ul>
+        <li>HYGINEIC PIPES & FITTINGS</li>
+          <li>VALVES & ACCESSORIES</li>
+          <li> MANWAY & TANK SAFTEY ACCESSORIES</li>
+          <li>AGITATORS & STIRRERS</li>
+          <li>GASKETS, INSULATION KITS & SHEETS<br></li>
+          <li>STUD BOLTS</li>
+          <li>STEAM TRAPS, STRAINERS & PRESSURE REGULATORS</li>
+          <li>BELTS & CONVEYORS</li>
+          <li>PUMPS</li>
+          <li>STRUCTURAL STEEL PRODUCTS</li>
+          
+          <li>STAINLESS STEEL PRODUCTS</li>
+          <li>WELDING CONUMABLES & EQUIPMENTS</li>
+          <li>HYGENIC HOSES</li>
+          
+        
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="some.jpg" alt="Buildings" width="700" height="90">
+      </div>
+    </div>
+  </div>
+<!--
+  <p class="w3-center w3-large">PTEC is established in 2016, and company’s status has notably increased over the past years with outstanding reputation. And also PTEC exhibits its ability to meet customer requirements as well as the local statutory requirements through its dedication, professionalism, Knowledge, skillful manpower & Stable resource.</p>
+  <p class="w3-center w3-large">PTEC Core Values are clearly reflected in the human resource policies. PTEC Top Management prioritizes the interests of their Clients and Employees since the former is PTEC future wealth and the latter is our intellectual asset. Implementing those values has earned us the trust of our many valued clients. </p>
+  
+    -->
+	<div class="w3-container w3-light-grey" style="padding:128px 16px" id='e&i'>
+        <h3 class="w3-center"><b>ELECTRICAL & INSTRUMENTATION  DIVISIION  </h3></b>
+        <div class="w3-row-padding">
+          <div class="w3-col m6">
+            <ul style="list-style-type:georgian;"></ul>
+            <li>CABLES </li>
+              <li>PANELS </li>
+              <li> CABLE TRAYS </li>
+              <li>MOTORS / GENERATORS </li>
+              <li>LIGHTING & FITTINGS </li>
+              <li>BATTERIES</li>
+              <li>UPS SYSTEMS </li>
+              <li>LIGHTING POLES & TOWERS </li>
+              <li>LEVEL MEASURING INSTRUMENTS</li>
+              <li>TEMPERATURE MEASURING INSTRUMENTS</li>
+              
+              <li>ELECTRICAL& INSTRUMENTATION ACCESSORIES </li>
+              
+              
+            
+          </div>
+          <div class="w3-col m6">
+            <!-- <img class="w3-image w3-round-large" src="some.jpg" alt="Buildings" width="700" height="90"> -->
+          </div>
+        </div>
+      </div>
+
+  
+
+      <div class="w3-container " style="padding:128px 16px" id='ppe'>
+        <h3 class="w3-center"><b>PERSONAL PROTECTIVE EQUIPMENT (PPE)  </h3></b>
+        <div class="w3-row-padding">
+          <div class="w3-col m6">
+            <ul style="list-style-type:georgian;"></ul>
+            <li>HAND PROTECTION </li>
+              <li>HEAD PROTECTION </li>
+              <li> HEARING PROTECTION </li>
+              <li>EYE PROTECTION </li>
+              <li>FACE PROTECTION </li>
+              <li>BODY PROTECTION</li>
+              <li>FOOT PROTECTION </li>
+             
+            
+          </div>
+          <div class="w3-col m6">
+            <!-- <img class="w3-image w3-round-large" src="some.jpg" alt="Buildings" width="700" height="90"> -->
+          </div>
+        </div>
+      </div>
+
+
+ <<div class="w3-container w3-light-grey" style="padding:128px 16px" id='h&a'>
+    <h3 class="w3-center"><b>HEAT VENTILATION & AIR CONDITIONING (HVAC)  </h3></b>
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <ul style="list-style-type:georgian;"></ul>
+        <li>CHILLERS  </li>
+          <li>VRV/VRF UNITS  </li>
+          <li> SPLIT AIR CONDITIONING  </li>
+          <li>WINDOW AIR CONDITIONING  </li>
+          <li>PACKAGE UNITS </li>
+          <li>CONDENSING UNIT </li>
+          <li>AIR HANDLING UNITS (AHU)</li>
+          <li>CHILLERS WATER PUMPS </li>
+          <li>REFRGFRANT & ACCESSORIES</li>
+          <li>GRILLS & DIFFUSERS</li>
+          
+          <li>COPPER PIPES & FITTINGS</li>
+          <li>MOTORS & COMPRESSORS</li>
+          <li>DUCTS & ACCESSORIES</li>
+          <li>CHILLER WATER PIPING & ACCESSORIES 
+          </li>
+          <li>DUCT & PIPE INSULATION </li>
+          
+          
+        
+      </div>
+      <div class="w3-col m6">
+        <!-- <img class="w3-image w3-round-large" src="some.jpg" alt="Buildings" width="700" height="90"> -->
+      </div>
+    </div>
+  </div>
+
+   
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href=""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <!--<i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>-->
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <div class="bottom-footer-paragraph">Website design by Jithu George V </div>
+  
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
